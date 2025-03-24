@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - NAICOM Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>About NAICOM</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Our Vision</h2>
+        <p>A safe and stable insurance industry competing globally and contributing optimally to Nigeria’s economy.</p>
+    </section>
+
+    <section>
+        <h2>Our Mission</h2>
+        <p>To effectively regulate, supervise, and develop the Nigerian Insurance Industry for the protection of insurance consumers and other stakeholders.</p>
+    </section>
+
+    <section>
+        <h2>Our Values</h2>
+        <p>We subscribe to the values of:</p>
+        <ul>
+            <li><strong>Professionalism</strong></li>
+            <li><strong>Transparency</strong></li>
+            <li><strong>Integrity</strong></li>
+            <li><strong>Consistency</strong></li>
+            <li><strong>Effectiveness</strong></li>
+        </ul>
+        <p>These values guide us in the pursuit of our vision.</p>
+    </section>
+
+    <section>
+        <h2>Mandate of the Commission</h2>
+        <p>The mandate of the Commission, as specified in the <em>NAICOM Act 1997</em>, includes the following functions:</p>
+        <ul>
+            <li>Establish standards for the conduct of insurance business in Nigeria.</li>
+            <li>Approve rates of insurance premiums to be paid for all classes of insurance.</li>
+            <li>Ensure adequate protection of strategic government assets and other properties.</li>
+            <li>Regulate transactions between insurers and reinsurers within and outside Nigeria.</li>
+            <li>Act as an adviser to the Federal Government on all insurance-related matters.</li>
+            <li>Approve standards, conditions, and warranties for all classes of insurance.</li>
+            <li>Protect insurance policyholders, beneficiaries, and third parties in insurance contracts.</li>
+            <li>Publish annual reports and statistics on the insurance industry.</li>
+            <li>Advise government ministries, agencies, and statutory bodies on insurance matters.</li>
+            <li>Support educational programs of the Chartered Insurance Institute of Nigeria and the West African Insurance Institute.</li>
+            <li>Perform other activities related to its functions under the Act.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Our Goals</h2>
+        <ul>
+            <li>Safeguard policyholders and improve confidence in the industry.</li>
+            <li>Strengthen our supervisory capabilities and organizational effectiveness.</li>
+            <li>Improve the safety and soundness of the Nigerian insurance industry.</li>
+            <li>Foster innovation and sustainability in the Nigerian insurance industry.</li>
+            <li>Enhance overall insurance accessibility and penetration in Nigeria.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Governing Board</h2>
+        <div class="board-members">
+            <div class="member">
+                <img src="images/bello muhammed.jpeg" alt="Muhammad Bello Argungu">
+                <p><strong>Mr. Muhammad Bello Argungu</strong><br>Member Rep. Federal Ministry of Industry, Trade & Investment</p>
+            </div>
+            <div class="member">
+                <img src="images/musa raibu.jpeg" alt="Musa Rabiu">
+                <p><strong>Mr. Musa Rabiu</strong><br>Member Rep. Central Bank of Nigeria</p>
+            </div>
+            <div class="member">
+                <img src="images/olusola dada.jpeg" alt="Olusola Dada">
+                <p><strong>Mrs. Olusola Dada</strong><br>Member Rep. Federal Ministry of Finance</p>
+            </div>
+            <div class="member">
+                <img src="images/hajiya.jpeg" alt="Halima Kyari">
+                <p><strong>Hajiya Halima Kyari</strong><br>Chairperson, Governing Board</p>
+            </div>
+            <div class="member">
+                <img src="images/mr olusegun.jpeg" alt="Olusegun Ayo Omosehin">
+                <p><strong>Mr. Olusegun Ayo Omosehin</strong><br>Commissioner for Insurance/CEO</p>
+            </div>
+            <div class="member">
+                <img src="images/mr ekerete.jpeg" alt="Ekerete Ola Gam-Ikon">
+                <p><strong>Mr. Ekerete Ola Gam-Ikon</strong><br>Deputy Commissioner for Insurance Finance & Admin</p>
+            </div>
+            <div class="member">
+                <img src="images/dr usman.jpeg" alt="Usman Jankara Jimada">
+                <p><strong>Dr. Usman Jankara Jimada</strong><br>Deputy Commissioner for Insurance Technical</p>
+            </div>
+            <div class="member">
+                <img src="images/mr adeniyi.jpeg" alt="Adeniyi Olusegun Fabikun">
+                <p><strong>Mr. Adeniyi Olusegun Fabikun</strong><br>Member</p>
+            </div>
+            <div class="member">
+                <img src="images/dr umar.jpeg" alt="Umar Khalifa Mohammed">
+                <p><strong>Dr. Umar Khalifa Mohammed</strong><br>Member</p>
+            </div>
+            <div class="member">
+                <img src="images/mrs abimbola.jpeg" alt="Abimbola Tiamiyu">
+                <p><strong>Mrs. Abimbola Tiamiyu</strong><br>Member Rep. Chartered Insurance Institute of Nigeria</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+    
+    
+</body>
+</html>

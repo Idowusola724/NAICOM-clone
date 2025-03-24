@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - NAICOM Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">NAICOM</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>NAICOM led by the CFI Olusegun Ayo Omosehin</h1>
+            <p>Paid a courtesy visit on the IGP Kayode Adeolu Egbetokun, Ph.D, NPM</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <img src="Images/regulations.svg" alt="Regulations">
+            <h3>Regulation and Guidelines</h3>
+        </div>
+        <div class="feature">
+            <img src="Images/insurance industry.svg" alt="Insurance">
+            <h3>Insurance Industry</h3>
+        </div>
+        <div class="feature">
+            <img src="Images/publications.svg" alt="Publications">
+            <h3>Publications</h3>
+        </div>
+        <div class="feature">
+            <img src="Images/news and event.svg" alt="News">
+            <h3>News and Events</h3>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <div class="news-item">
+            <h2>News Updates</h2>
+            <p><strong>DISCLAIMER:</strong> Use of the name and office of the Commissioner for Insurance for unscrupulous activities.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="news-item live-stream">
+            <h2>Live Stream</h2>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/YOUR_LIVE_STREAM_ID" 
+                title="Live Stream" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+    
+</body>
+</html>
